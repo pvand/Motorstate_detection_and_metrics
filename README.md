@@ -1,5 +1,3 @@
-# Motorstate_detection_and_metrics
-
 # Motor State Detection and Gait Metrics Algorithms
 
 **Purpose**  
