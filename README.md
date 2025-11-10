@@ -1,11 +1,10 @@
 # Motor State Detection and Gait Metrics Algorithms
 
 **Purpose**  
-This repository contains pseudocode and algorithm descriptions used for the detection of motor states, associated moblity metrics from head and body motion capture or AR systems.  
-It accompanies the associated scientific article to improve reproducibility and clarity of the methods.
+This repository contains pseudocode and algorithm descriptions used for the detection of motor states and associated moblity metrics from head and body motion capture or AR systems.  
+It accompanies the associated scientific article (https://doi.org/10.20944/preprints202510.1248.v1) to improve reproducibility and clarity of the methods.
 
 ---
-
 
 **Descriptions:**  
 - **Motorstate_detection/** – Core algorithms for detecting motor states: squats, straight walking, transfers, and turning events.  
