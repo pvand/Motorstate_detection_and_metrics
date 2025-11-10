@@ -10,8 +10,8 @@ Detect turning events based on head yaw angle using smoothed angular velocity.
 **Inputs**
 | Variable       | Description                                  | Source |
 |----------------|----------------------------------------------|--------|
-| `yaw`          | Yaw angle signal over time                   | Head Theia3D or AR system |
-| `Fs`           | Sampling frequency (Hz)                      | Head Theia3D or AR system |
+| `yaw`          | Yaw angle signal over time                   | Head motion capture system or AR system |
+| `Fs`           | Sampling frequency (Hz)                      | Head motion capture system or AR system |
 | `velThreshold` | Minimum angular velocity to count as a turn  | User-defined |
 
 **Output**
@@ -41,7 +41,7 @@ for each valley index ii from 1 to length(locs)-1:
     peakVal, peakRelIdx = max(segment)           // find maximum in segment  
     if peakVal > velThreshold:                   // check against threshold  (Ve = 50 °/s  )
         append segment to turn_idx
-
+```text
 ---
 
 ## References
