@@ -21,6 +21,11 @@ Detect turning events based on head yaw angle using smoothed angular velocity.
 
 ---
 
+**References**
+Shah, V. V., Curtze, C., Mancini, M., Carlson-Kuhta, P., Nutt, J. G., Gomez, C. M., El-Gohary, M., Horak, F. B., & McNames, J. (2021). Inertial Sensor Algorithms to Characterize Turning in Neurological Patients With Turn Hesitations. IEEE transactions on bio-medical engineering, 68(9), 2615–2625. https://doi.org/10.1109/TBME.2020.3037820
+
+---
+
 ## Pseudocode
 
 ```text
@@ -41,11 +46,6 @@ for each valley index ii from 1 to length(locs)-1:
     peakVal, peakRelIdx = max(segment)           // find maximum in segment  
     if peakVal > velThreshold:                   // check against threshold  (Ve = 50 °/s  )
         append segment to turn_idx
-
----
-
-**References**
-Shah, V. V., Curtze, C., Mancini, M., Carlson-Kuhta, P., Nutt, J. G., Gomez, C. M., El-Gohary, M., Horak, F. B., & McNames, J. (2021). Inertial Sensor Algorithms to Characterize Turning in Neurological Patients With Turn Hesitations. IEEE transactions on bio-medical engineering, 68(9), 2615–2625. https://doi.org/10.1109/TBME.2020.3037820
 
 
 
