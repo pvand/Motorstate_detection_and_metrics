@@ -1,7 +1,7 @@
-# Motorstate Detection and Gait Metrics Repository
+# Motorstate Detection and Mobility Metrics Repository
 
 **Purpose**  
-This repository contains pseudocode and algorithm descriptions used for the detection of motor states and associated metrics from head and body motion capture or AR systems.  
+This repository contains pseudocode and algorithm descriptions used for the detection of motor states and associated metrics from head motion capture or AR systems.  
 It accompanies the associated scientific article (https://doi.org/10.20944/preprints202510.1248.v1) to improve reproducibility and clarity of the methods.
 
 ---
