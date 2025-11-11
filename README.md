@@ -38,8 +38,7 @@ This flowchart shows the general pipeline:
 
 1. **Motorstate Detection**: Identifies squats, straight walking, transfers, and turning events from motion capture data. 
 2. **Matching Segments**: Matches motorstates segments and computes agreement metrics: precision, recall, F1 score, and temporal overlap.
-3. **ICC optimization**: Uses a cost-iterative approach to find the best ICC for a range of head and pelvis thresholds. 
-4. **Metric Computation**: Once motor states are detected, the algorithms compute mobility metrics within that motorstate.
+3. **Metric Computation**: Once motor states are detected, the algorithms compute mobility metrics within that motorstate.
 
 ---
 ## Dataset Description
