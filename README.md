@@ -53,8 +53,8 @@ dataset.game          % Game identifier
 
 Contains head-tracking measurements from the AR headset:
 
-- `ARdata.x`, `ARdata.y`, `ARdata.z` – 3D position coordinates  
-- `ARdata.roll`, `ARdata.pitch`, `ARdata.yaw` – orientation angles in radians
+- `ARdata.x`, `.y`, `.z` – 3D position coordinates  
+- `ARdata.roll`, `pitch`, `yaw` – orientation angles in radians
 
 --- 
 
@@ -72,13 +72,13 @@ Contains head-tracking measurements from the AR headset:
 
 #### Left and Right Feet
 
-- `Theiadata.lfoot.x`, `.y`, `.z`  
-- `Theiadata.rfoot.x`, `.y`, `.z`
+- `Theiadata.lfoot.x`, `.y`, `.z` – 3D position 
+- `Theiadata.rfoot.x`, `.y`, `.z` – 3D position 
 
 #### Left and Right Toes
 
-- `Theiadata.ltoes.x`, `.y`, `.z`  
-- `Theiadata.rtoes.x`, `.y`, `.z`
+- `Theiadata.ltoes.x`, `.y`, `.z` – 3D position  
+- `Theiadata.rtoes.x`, `.y`, `.z` – 3D position 
 ---
 
 ## License
