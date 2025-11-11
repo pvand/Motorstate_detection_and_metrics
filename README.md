@@ -15,26 +15,31 @@ flowchart TD
     A --> D[Transfers]
     A --> E[Turning]
     
-    B --> B1[Squat Bounds]
-    B --> B2[Squat Depth]
+    B --> Bm[matchSegments]
+    Bm --> B1[Squat Bounds]
+    Bm --> B2[Squat Depth]
     
-    C --> C0["Step Detection AR + Theia3D"]
+    C --> Cm[matchSegments]
+    Cm --> C0["Step Detection AR + Theia3D"]
+    Cm --> C1[Gait Speed]
+    C0 --> C2[Step Length]
+    C0 --> C3[Cadence]
+
+    D --> Dm[matchSegments]
+    Dm --> D1[Transfer Bounds]
     
-    C0 --> C1[Step Length Computation]
-    C0 --> C2[Cadence Computation]
-    C0 --> C3[Gait Speed Computation]
-    
-    D --> D1[Transfer Bounds]
-    
-    E --> E1[Turn Bounds]
-    E --> E2[Turn Peak Velocity]
+    E --> Em[MatchSegments and ICC optimization]
+    Em --> E1[Turn Bounds]
+    Em --> E2[Turn Peak Velocity]
 ```
 
 
 This flowchart shows the general pipeline:
 
-1. **Motorstate Detection**: Identifies squats, straight walking, transfers, and turning events from motion capture data.  
-2. **Metric Computation**: Once motor states are detected, the algorithms compute mobility metrics within that motorstate.
+1. **Motorstate Detection**: Identifies squats, straight walking, transfers, and turning events from motion capture data. 
+2. **Matching Segments**: Matches motorstates segments and computes agreement metrics: precision, recall, F1 score, and the proportion of temporal overlap for each matched segment
+3. **ICC optimization**: Uses a cost-iterative approach to find the best ICC for a range of head and pelvis thresholds. 
+4. **Metric Computation**: Once motor states are detected, the algorithms compute mobility metrics within that motorstate.
 
 ---
 ## Dataset Description
