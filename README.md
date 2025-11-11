@@ -1,7 +1,7 @@
 # Motorstate Detection and Mobility Metrics Repository
 
 **Purpose**  
-This repository contains pseudocode and algorithm descriptions used for the detection of motor states and associated metrics from head motion capture or AR systems.  
+This repository contains pseudocode and algorithm descriptions used for the detection of motor states and associated metrics from head motion capture and AR systems.  
 It accompanies the associated scientific article (https://doi.org/10.20944/preprints202510.1248.v1) to improve reproducibility and clarity of the methods.
 
 ---
@@ -36,7 +36,7 @@ flowchart TD
 
 This flowchart shows the general pipeline:
 
-1. **Motorstate Detection**: Identifies squats, straight walking, transfers, and turning events from motion capture data. 
+1. **Motorstate Detection**: Identifies squats, straight walking, transfers, and turning events from motion capture data and AR system data. 
 2. **Matching Segments**: Matches motorstates segments and computes agreement metrics: precision, recall, F1 score, and temporal overlap.
 3. **Metric Computation**: Once motor states are detected, the algorithms compute mobility metrics within that motorstate.
 
