@@ -37,6 +37,49 @@ This flowchart shows the general pipeline:
 2. **Metric Computation**: Once motor states are detected, the algorithms compute mobility metrics within that motorstate.
 
 ---
+## Dataset Description
+
+The repository includes a processed dataset (`dataset.mat`) in MATLAB `.mat` format containing 3D position and orientation data from head-mounted AR devices and Theia3D motion capture.
+
+Each entry corresponds to a single participant and game session:
+
+```matlab
+dataset.participant   % Participant identifier
+dataset.game          % Game identifier
+```
+
+--- 
+### AR Device Data (`ARdata`)
+
+Contains head-tracking measurements from the AR headset:
+
+- `ARdata.x`, `ARdata.y`, `ARdata.z` – 3D position coordinates  
+- `ARdata.roll`, `ARdata.pitch`, `ARdata.yaw` – orientation angles in radians
+
+--- 
+
+### Theia3D Motion Capture Data (`Theiadata`)
+
+#### Head Segment
+
+- `Theiadata.head.x`, `.y`, `.z` – 3D position  
+- `Theiadata.head.roll`, `.pitch`, `.yaw` – orientation angles in radians
+
+#### Pelvis Segment
+
+- `Theiadata.pelvis.x`, `.y`, `.z` – 3D position  
+- `Theiadata.pelvis.roll`, `.pitch`, `.yaw` – orientation angles in radians
+
+#### Left and Right Feet
+
+- `Theiadata.lfoot.x`, `.y`, `.z`  
+- `Theiadata.rfoot.x`, `.y`, `.z`
+
+#### Left and Right Toes
+
+- `Theiadata.ltoes.x`, `.y`, `.z`  
+- `Theiadata.rtoes.x`, `.y`, `.z`
+---
 
 ## License
 
