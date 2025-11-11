@@ -10,10 +10,10 @@ It accompanies the associated scientific article (https://doi.org/10.20944/prepr
 
 ```mermaid
 flowchart TD
-    A[Motorstate Detection] --> B[Detect Squats]
-    A --> C[Detect Straight Walking]
-    A --> D[Detect Transfers]
-    A --> E[Detect Turning]
+    A[Motorstate Detection] --> B[Squats]
+    A --> C[Straight Walking]
+    A --> D[Transfers]
+    A --> E[Turning]
     
     B --> B1[Squat Bounds]
     B --> B2[Squat Depth]
