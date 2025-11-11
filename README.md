@@ -34,7 +34,7 @@ flowchart TD
 This flowchart shows the general pipeline:
 
 1. **Motorstate Detection**: Identifies squats, straight walking, transfers, and turning events from motion capture data.  
-2. **Metric Computation**: Once motor states are detected, the algorithms compute metrics such as step length, cadence, gait speed, squat depth, transfer bounds, and turn characteristics.
+2. **Metric Computation**: Once motor states are detected, the algorithms compute mobility metrics within that motorstate.
 
 ---
 
