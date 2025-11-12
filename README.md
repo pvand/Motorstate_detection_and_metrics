@@ -127,3 +127,5 @@ The pseudocode in this repository is based on the following references, among ot
 - van Doorn,  P. F., Nyman Jr.,  E., Wishaupt,  K., van der Krogt,  M. M., & Roerdink,  M. (2025). Deriving Motor States and Mobility Metrics from Gamified Augmented Reality Rehabilitation Exercises in People with Parkinson’s Disease. Preprints. https://doi.org/10.20944/preprints202510.1248.v1
 - Shah, V. V., Curtze, C., Mancini, M., Carlson-Kuhta, P., Nutt, J. G., Gomez, C. M., El-Gohary, M., Horak, F. B., & McNames, J. (2021). *Inertial Sensor Algorithms to Characterize Turning in Neurological Patients With Turn Hesitations.* IEEE Transactions on Biomedical Engineering, 68(9), 2615–2625. [DOI](https://doi.org/10.1109/TBME.2020.3037820)
 
+## Citation
+You can cite this repository using the following [![DOI](https://zenodo.org/badge/1093597821.svg)](https://doi.org/10.5281/zenodo.17592651)
