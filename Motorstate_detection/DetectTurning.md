@@ -42,7 +42,7 @@ Detect turning events based on head yaw angle using smoothed angular velocity.
 ```text
 // Step 1: Compute smoothed yaw velocity
 ang_Vel = gradient(yaw) * Fs                     // compute angular velocity
-velFilt = smooth ang_Vel using Epanechnikov kernel of specified duration
+velFilt = smooth ang_Vel using Epanechnikov kernel of specified duration (Shah et al. 2021)
 velAbs = abs(velFilt)                             // take absolute value
 
 // Step 2: Detect candidate valleys
@@ -55,6 +55,7 @@ for each valley index ii from 1 to length(locs)-1:
     peakVal, peakRelIdx = max(segment)           // find maximum in segment  
     if peakVal > velThreshold:                   // check against threshold
         append segment to turn_idx
+
 
 
 
