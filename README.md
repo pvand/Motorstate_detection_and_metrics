@@ -15,22 +15,43 @@ flowchart TD
     A --> D[Transfers]
     A --> E[Turning]
     
-    B --> Bm[matchSegments]
+    %% Squats
+    B --> Bm[MatchSegments]
     Bm --> B1[Squat Bounds]
-    Bm --> B2[Squat Depth]
+    B1 --> B2[Squat Duration]
+    B1 --> B3[Squat Depth]
     
-    C --> Cm[matchSegments]
-    Cm --> C0["Step Detection AR + Theia3D"]
-    Cm --> C1[Gait Speed]
-    C0 --> C2[Step Length]
-    C0 --> C3[Cadence]
+    %% Straight Walking
+    C --> Cm[MatchSegments]
+    Cm --> C0["Step Detection AR"]
+    Cm --> C1["Step Detection Theia3D"]
+    Cm --> C2[Gait Speed]
 
-    D --> Dm[matchSegments]
+    %% Step metrics from both detection methods
+    C0 --> C3[Step Length + Cadence]
+    C1 --> C3
+
+    %% Transfers
+    D --> Dm[MatchSegments]
     Dm --> D1[Transfer Bounds]
+    D1 --> D2[Transfer duration]
     
+    %% Turning
     E --> Em[MatchSegments and ICC optimization]
     Em --> E1[Turn Bounds]
-    Em --> E2[Turn Peak Velocity]
+    E1 --> E2[Turn Duration]
+    E1 --> E3[Turn Peak Velocity]
+    
+    %% Keep same visual row, no line, no color
+    subgraph metrics[ ]
+        direction LR
+        C3
+        C2
+    end
+    %% Override subgraph styling to remove color
+    style metrics fill:none,stroke:none
+   
+
 ```
 
 
