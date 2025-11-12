@@ -51,9 +51,7 @@ flowchart TD
     %% Override subgraph styling to remove color
     style metrics fill:none,stroke:none
    
-
 ```
-
 
 This flowchart shows the general pipeline:
 
