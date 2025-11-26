@@ -2,7 +2,7 @@
 
 **Purpose**  
 This repository contains pseudocode and algorithm descriptions used for the detection of motor states and associated metrics from head motion capture and AR systems.  
-It accompanies the associated scientific article (https://doi.org/10.20944/preprints202510.1248.v1) to improve reproducibility and clarity of the methods.
+It accompanies the associated scientific article (https://doi.org/10.3390/s25237172) to improve reproducibility and clarity of the methods.
 
 ---
 
@@ -124,7 +124,7 @@ This repository is shared under the **Creative Commons Attribution-NonCommercial
 
 The pseudocode in this repository is based on the following references, among others:
 
-- van Doorn,  P. F., Nyman Jr.,  E., Wishaupt,  K., van der Krogt,  M. M., & Roerdink,  M. (2025). Deriving Motor States and Mobility Metrics from Gamified Augmented Reality Rehabilitation Exercises in People with Parkinson’s Disease. Preprints. https://doi.org/10.20944/preprints202510.1248.v1
+- van Doorn, P.F.; Nyman, E., Jr.; Wishaupt, K.; van der Krogt, M.M.; Roerdink, M. Deriving Motor States and Mobility Metrics from Gamified Augmented Reality Rehabilitation Exercises in People with Parkinson’s Disease. Sensors 2025, 25, 7172. https://doi.org/10.3390/s25237172
 - Shah, V. V., Curtze, C., Mancini, M., Carlson-Kuhta, P., Nutt, J. G., Gomez, C. M., El-Gohary, M., Horak, F. B., & McNames, J. (2021). *Inertial Sensor Algorithms to Characterize Turning in Neurological Patients With Turn Hesitations.* IEEE Transactions on Biomedical Engineering, 68(9), 2615–2625. [DOI](https://doi.org/10.1109/TBME.2020.3037820)
 
 ## Citation
